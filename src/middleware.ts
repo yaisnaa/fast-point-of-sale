@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { UpdateSession } from "./lib/supabase/middleware";
-
+//ini yang bakal dieksekusi pada pertama kali web dijalankan
 export async function middleware(request: NextRequest) {
   return await UpdateSession(request);
 }
